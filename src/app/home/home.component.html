@@ -1,0 +1,21 @@
+<form [formGroup]="this.form" (ngSubmit) = "AddDocument()">
+    <mat-form-field appearance="outline">
+        <mat-label>Document Name</mat-label>
+        <input matInput placeholder="Document Name" formControlName="DocumentName">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Document Price</mat-label>
+        <input matInput placeholder="Document Price" type="number" formControlName="DocumentPrice">
+    </mat-form-field>
+
+<button mat-raised-button color="primary" type="submit">Add</button>
+
+</form>
+
+
+<span *ngFor="let item of DocumentList">
+    <p> {{item.DocumentName}}</p>
+    <br>
+    <p>{{item.DocumentPrice}}</p>    
+</span>
