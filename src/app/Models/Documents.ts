@@ -1,4 +1,4 @@
 export class Documents{
-    DocumentName : string;
-    DocumentPrice : number;
+    DocName : string;
+    DocFee : number;
 }

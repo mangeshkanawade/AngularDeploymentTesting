@@ -23,8 +23,8 @@ export class HomeComponent implements OnInit {
   }
 
   form : FormGroup = new FormGroup({
-    DocumentName : new FormControl('',Validators.required),
-    DocumentPrice : new FormControl('',Validators.required)
+    DocName : new FormControl('',Validators.required),
+    DocFee : new FormControl('',Validators.required)
   });
 
   AddDocument(){
